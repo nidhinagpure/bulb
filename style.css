@@ -1,0 +1,67 @@
+.bulb-container{
+    height: 250x;
+    width: 460px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: bisque;
+    margin: 50px auto;
+
+}
+
+.bulb-image{
+    padding: 20px 30px;
+    height: 400px;
+    width: 400px;
+}
+.bulb-text{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.bulb-btn{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 9px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+.btn-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.magic-div{
+    height: 460px;
+    width: 400px;
+    border: black 3px dashed;
+    background-color: rgb(208, 228, 228);
+    margin: 70px auto;
+}
+    
+.magic-image{
+    height: 280px;
+    width: 280px;
+    display: block;
+    padding: 20px 55px;
+}
+
+.magic-btn{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #ffb3d1;
+    color: black;
+    cursor: pointer;
+    display: block;
+    margin: 40px 110px;
+    text-decoration: none;
+}
+.decoration{
+    text-decoration: none;
+}
+.color{
+    background-color:#fcc9ea;
+}

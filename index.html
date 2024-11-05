@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggler Bulb</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body id="backcolour">
+
+    <div class="bulb-container" id="container">
+
+        <h3 class="bulb-text" id="text">SEEE MAGIC.. 🤩</h3>
+
+        <img src="./image/bulbs.png" class="bulb-image" id="bulb">
+
+        <div class="btn-div">
+            <button class="bulb-btn" id="buttonoff" onclick="Offbulb()">CLICK OFF</button>
+            <button class="bulb-btn" id="buttonon" onclick="onbulb()">CLICK ON</button>
+        </div>
+    </div>
+
+
+    <script>
+
+        function onbulb() {
+            const onBulb = document.getElementById('bulb');
+            onBulb.src = './image/lightbulb.png';
+
+            const button = document.getElementById('buttonon');
+            button.style.backgroundColor = '#ffd11a';
+            button.style.color = '#000000';
+
+            const textbulb = document.getElementById('text');
+            textbulb.innerText = 'TOGGLER BULB..🌞'
+
+            const backcolour = document.getElementById('container');
+            backcolour.style.backgroundColor = '#ffffb3';
+            backcolour.style.border = '3px #000000 double';
+
+            const bodyclor = document.getElementById('backcolour');
+            bodyclor.style.backgroundColor = '#ffffcc';
+        }
+
+        function Offbulb() {
+            const onBulb = document.getElementById('bulb');
+            onBulb.src = './image/bulbs.png';
+
+            const button = document.getElementById('buttonoff');
+            button.style.backgroundColor = '#4d4d4d';
+            button.style.color = '#fffff';
+
+            const textbulb = document.getElementById('text');
+            textbulb.innerText = 'TOGGLER BULB..🌚'
+
+            const backcolour = document.getElementById('container');
+            backcolour.style.backgroundColor = '#999999';
+            backcolour.style.border = '3px #000000 double';
+
+            const bodyclor = document.getElementById('backcolour');
+            bodyclor.style.backgroundColor = '#404040';
+        }
+    </script>
+</body>
+
+</html>
